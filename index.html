@@ -11,6 +11,131 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			.top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #111; 
+  height: auto;
+  padding-top: 100px;
+  margin: 0 auto;
+  position: relative;
+}
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #111; 
+  height: auto;
+  padding-bottom: 100px;
+  margin: 0 auto;
+  position: relative;
+}
+.time {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+  background-color: #111;
+}
+.timeline {
+  width: 95%;
+  height: auto;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.timeline ul {
+  list-style: none;
+}
+.timeline ul li {
+  padding: 20px;
+  background-color: #1e1f22;
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  border-style: solid;
+}
+.timeline ul li:last-child {
+  margin-bottom: 0;
+}
+.timeline-content h1 {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+.timeline-content p {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 300;
+}
+.timeline-content .date {
+  font-size: 12px;
+  font-weight: 300;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+@media only screen and (min-width: 768px) {
+  .timeline:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background-color: gray;
+  }
+  .timeline ul li {
+    width: 50%;
+    position: relative;
+    margin-bottom: 50px;
+  }
+  
+  .timeline ul li:nth-child(odd) {
+    float: left;
+    clear: right;
+    transform: translateX(-30px);
+    border-radius: 20px 0px 20px 20px;
+  }
+  .timeline ul li:nth-child(even) {
+    float: right;
+    clear: left;
+    transform: translateX(30px);
+    border-radius: 0px 20px 20px 20px;
+  }
+  .timeline ul li::before {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color:yellow;
+    top: 0px;
+  }
+  .timeline ul li:nth-child(odd)::before {
+    transform: translate(50%, -50%);
+    right: -30px;
+  }
+  .timeline ul li:nth-child(even)::before {
+    transform: translate(-50%, -50%);
+    left: -30px;
+  }
+  .timeline-content .date {
+    position: absolute;
+    top: -30px;
+  }
+  .timeline ul li:hover::before {
+    background-color: aqua;
+  }
+}
+
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -97,7 +222,77 @@
 
 				</div>
 			</section>
-
+<section>
+	<div class="top"><div class="top-content "style="color:#fdd80d;">
+        <h3><u>SKILL BOOST V 1.0</u></h3>
+        <h1>THE TIME LINE</h1>
+    </div></div>
+    
+    <div class="time">
+        <div class="timeline">
+            <ul>
+                <li>
+                    <div class="timeline-content " style="color:#a9d2c0;">
+                        <h1>AWARENESS SESSION</h1><hr>
+                        <p>Public awareness session</br>15th October</br>(tentative)</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-content "style="color:#a9d2c0;">
+                        <h1>INTRODUCTION WEBINAR</h1><hr>
+                        <p>on Generation Alpha SkillBoost V 1.0 with ER person</br>25th October</br>(tentative)<br>+casual discussions</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-content "style="color:#43d566;">
+                        <h1>WEBINAR FOR CREATIVE EDUCATION, INNOVATION AND ENTREPRENEURSHIP</h1><hr>
+                        <p>with ER person</br>02nd November</br>(tentative)<br>+casual discussions</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-content "style="color:#43d566;">
+                        <h1>WEBINAR FOR BARRIERS IN LEARNING E.I.E AND HOW TO OVERCOME THEM</h1><hr>
+                        <p>with ER person</br>09th November</br>(tentative)<br>+casual discussions</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-content "style="color:#42c4ff;">
+                        <h1>WEBINAR ON SUBJECT KNOWLEDGE FOR INNOVATION & ENTREPRENEURSHIP</h1><hr>
+                        <p>with ER person<br>Subjective knowledge will be discussed</br>16th November</br>(tentative)<br>+casual discussions</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-content "style="color:#42c4ff;">
+                        <h1>WORKSHOP FOR THE SOFT SKILLS DEVELOPING</h1><hr>
+                        <p>with ER person</br>23rd November</br>(tentative)<br>+casual discussions</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-content "style="color:#98e0ff;">
+                        <h1>WORKSHOP FOR HOW TO DEVELOP A BUSINESS CANVAS MODLE</h1><hr>
+                        <p>with ER person</br>30th November</br>(tentative)<br>+casual discussions<br>+getting know about their passionate subject area to innovate</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-content "style="color:#98e0ff;">
+                        <h1>TECHNICAL WORKSHOP 1</h1><hr>
+                        <p>with ER person</br>07th December</br>(tentative)<br>+casual discussions<br>+getting know about their passionate subject area to innovate</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-content "style="color:#98e0ff;">
+                        <h1>TECHNICAL WORKSHOP 2</h1><hr>
+                        <p>with ER person</br>14th December</br>(tentative)<br>+casual discussions<br>+getting know about their passionate subject area to innovate</p>
+                    </div>
+                </li>
+            </ul>
+            
+        </div>
+    </div>
+    <div class="bottom"><div class="top-content "style="color:#fdd80d;">
+                <h3>END OF THE FIRST PHRASE</h3>
+            </div></div>
+		</section>
 		<!-- Contact -->
 			<section id="contact" class="main style3 secondary">
 				<div class="content">
